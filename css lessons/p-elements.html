@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+</head>
+<body>
+
+    <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, similique temporibus?
+         Amet itaque officiis excepturi, facilis deleniti, vero non est in quos optio quibusdam 
+         odio veniam minus dolor delectus doloremque?
+    </p>
+
+    <ol>
+        <li>Amira</li>
+        <li>Amira</li>
+    </ol>
+    <ul>
+        <li>Amira</li>
+        <li>Amira</li>
+    </ul>
+
+</body>
+<style>
+    ::marker{
+        color: red;
+    }
+
+    ol li::before,
+    ul li::before{
+        content: "🥰";
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    *::selection{
+        background-color: goldenrod;
+        color: blue;
+    }
+
+    .p1::first-line{
+        background-color: black;
+        color: snow;
+    }
+    .p1::first-letter{
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        color: red;
+    }
+</style>
+</html>

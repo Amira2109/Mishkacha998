@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+        <table style="background-color: aqua;" >
+            <tr>
+                <td rowspan="2">
+                    <ol type="1">
+                        <li>BMW</li>
+                        <li>Tesla</li>
+                        <li>Toyota</li>
+                    </ol>
+                </td>
+            </tr>
+            
+            <tr>
+                <td rowspan="1" >
+                    <ol>
+                        <li>BMW</li>
+                        <li>Tesla</li>
+                        <li>Toyota</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+</body>
+
+<style>
+
+    * {transition: 1s;}
+    body { background-color: black;}
+
+ .main {
+        width: 80%;
+        margin: 0 auto;
+    }
+    li:nth-child(odd) {
+        background-color: gray;
+        color: aquamarine;
+    }
+    li:nth-child(even) {
+        background-color: black;
+        color: magenta;
+    }
+    li:last-child,
+    li:first-child {
+        background-color: red;
+        color: snow;
+    }
+    li { padding: 10px 20px; }
+    li:nth-child(odd):hover {
+        color: magenta;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(52, 52, 52, 0.8);
+        background-blend-mode: darken;
+        padding: 50px;
+    }
+    
+    li:nth-child(even):hover {
+        color: cyan;
+        font-family: fantasy;
+
+        background: url(/Cars/1.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(52, 52, 52, 0.8);
+        background-blend-mode: darken;
+        padding: 50px;
+    }
+
+</style>
+<form action="#" method="post" enctype="multipart/form-data">
+    <label for="Username">Username</label>
+    <input id="Username" type="text">
+</form>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: snow; color: black;">
+
+
+
+</body>
+</html>

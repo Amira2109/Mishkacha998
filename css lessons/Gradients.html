@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+</head>
+<body>
+    
+    <div class="block"></div>
+
+</body>
+
+<style>
+
+
+    body {
+        background-color: #000;
+    }
+
+    .block{
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+
+        border-radius: 50%;
+        background: linear-gradient(120deg, green 30%, red 50%, rgb( 225, 225, 0) 60% blue );
+        background: linear-gradient( 120deg, rgba( 0, 0, 255, 0), rgb(128, 128,128));
+        background: linear-gradient(to right, green 30%, red 50%, yellow 60%, blue);
+        background: linear-gradient(to left, green 30%,  red 50%, yellow 60%, blue);
+        background: linear-gradient(to top, green 30%,  red 50%, yellow 60%, blue);
+        background: linear-gradient(to bottom, green 30%,  red 50%, yellow 60%, blue);
+        background: repeating-linear-gradient(red, yellow 10%, green 20%);
+        background: radial-gradient(red, yellow,green);
+        background: radial-gradient(circle, yellow, green);
+        background: repeating-radial-gradient(circle, gray, purple 10%, black 15%);
+        position: relative;
+    
+    }
+
+    .c1{
+        position: absolute;
+        top: 16%;
+        left: 10px;
+    }
+
+</style>
+</html>
